@@ -8,11 +8,13 @@
 - run command `npm install node-sass —save-dev` to install the css compiler into the developer-dependencies list of package.json
 - run command `npm install clean-css —save-dev` to install the css minifier into the developer-dependencies list of package.json
 - add the following scripts to package.json
+```
 "scripts": {
-        "compile-styles": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 styles.scss dist/styles.css",
-        "css-minify": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/styles.min.css dist/styles.css"
+    "compile-styles": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 styles.scss dist/styles.css",
+    "css-minify": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/styles.min.css dist/styles.css"
 	"process-styles": "npm run compile-styles && npm run css-minify"
-      }
+}
+```
 - run the command `npm run process-styles` to compile and minify the sass project structure
 - create an account to https://www.npmjs.com/ in order to publish the package to npm
 - inside the terminal write command `npm login` and enter the credentials and email
