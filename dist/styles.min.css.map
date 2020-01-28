@@ -1,0 +1,1 @@
+{"version":3,"sources":["../styles.scss"],"names":[],"mappings":"AAGA,mBACI,MAJa,KAKb,iBAJa","sourcesContent":["$containerWidth: 20px !default;\n$containerColor: black !default;\n\n.container-example {\n    width: $containerWidth;\n    background-color: $containerColor;\n}"]}

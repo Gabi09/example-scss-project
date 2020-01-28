@@ -1,0 +1,7 @@
+$containerWidth: 20px !default;
+$containerColor: black !default;
+
+.container-example {
+    width: $containerWidth;
+    background-color: $containerColor;
+}

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"../styles.scss"
+	],
+	"sourcesContent": [
+		"$containerWidth: 20px !default;\n$containerColor: black !default;\n\n.container-example {\n    width: $containerWidth;\n    background-color: $containerColor;\n}"
+	],
+	"names": [],
+	"mappings": "AAGA,AAAA,kBAAkB,CAAC;EACf,KAAK,EAJQ,IAAI;EAKjB,gBAAgB,EAJH,KAAK;CAKrB"
+}

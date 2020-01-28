@@ -1,0 +1,17 @@
+{
+  "name": "example-scss-project",
+  "version": "1.0.0",
+  "description": "boilerplate for scss project",
+  "repository": "https://github.com/Gabi09/example-scss-project",
+  "scripts": {
+    "compile-styles": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 styles.scss dist/styles.css",
+    "css-minify": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/styles.min.css dist/styles.css",
+    "process-styles": "npm run compile-styles && npm run css-minify"
+  },
+  "author": "gabi",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.13.1"
+  }
+}
