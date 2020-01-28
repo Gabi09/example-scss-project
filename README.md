@@ -11,8 +11,8 @@
 ```
 "scripts": {
     "compile-styles": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 styles.scss dist/styles.css",
-    "css-minify": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/styles.min.css dist/styles.css"
-	"process-styles": "npm run compile-styles && npm run css-minify"
+    "css-minify": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/styles.min.css dist/styles.css",
+    "process-styles": "npm run compile-styles && npm run css-minify"
 }
 ```
 - run the command `npm run process-styles` to compile and minify the sass project structure
